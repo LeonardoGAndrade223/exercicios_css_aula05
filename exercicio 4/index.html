@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sistema de multas de biblioteca</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class='cabecalho'>
+        <h1>Sistema de multas de biblioteca</h1>
+    </header>
+
+    <div class="formulario">
+        <form action="processa.php" method="post">
+
+            <label for="nome">Nome do usuário</label>
+            <input type="text" required name="nome" id="nome">
+
+            <label for="livro">Título do livro</label>
+            <input type="text" required name="livro" id="livro">
+
+            <label for="diasAtraso">Quantidade de dias de atraso</label>
+            <input type="number" required name="diasAtraso" id="diasAtraso" min="0">
+
+            <button type="submit">Enviar</button>
+        </form>
+    </div>
+</body>
+</html>

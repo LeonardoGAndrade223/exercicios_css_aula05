@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sistema de pagamento de vendedores</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class='cabecalho'>
+        <h1>Sistema de pagamento de vendedores</h1>
+    </header>
+
+    <div class="formulario">
+        <form action="processa.php" method="post">
+
+            <label for="nome">Nome do vendedor</label>
+            <input type="text" required name="nome" id="nome">
+
+            <label for="salarioBase">Salário-base</label>
+            <input type="number" required name="salarioBase" id="salarioBase" min="0" step="0.01">
+
+            <label for="vendas">Total de vendas realizadas no mês</label>
+            <input type="number" required name="vendas" id="vendas" min="0" step="0.01">
+
+            <button type="submit">Enviar</button>
+        </form>
+    </div>
+</body>
+</html>
